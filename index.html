@@ -1,46 +1,100 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>首页</title>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+	</head>
 
-<body>
-    <header>
-        <nav>
-            <a href="#">首页</a>
-            <a href="#">
-              关于我们
-              <ul>
-                  <li>
-                      <a href="#">公司简介</a>
-                  </li>
-                  <li>
-                      <a href="#">东南大学-力汇振控联合中心简介</a>
-                  </li>
-                  <li>
-                      <a href="#">专家团队简介</a>
-                  </li>
-                  <li>
-                      <a href="#">公司愿景</a>
-                  </li>
-              </ul>
-            </a>
-            <a href="#">公司新闻</a>
-            <a href="#">产品与解决方案</a>
-            <a href="#">工程案例</a>
-            <a href="#">联系我们</a>
-            <a href="#">招贤纳士</a>
-        </nav>
-    </header>
-    <div class="">
+	<body>
+		<header>
+			<!--nav-->
+			<nav class="navbar navbar-default orceset-nav" role="navigation">
+				<div class="container-fluid">
+					<!--logo-->
+					<div class="navbar-header">
+						<a class="navbar-brand orceset-navbar-brand" href="#">
+							<img class="img-responsive" src="images/logo.jpg" />
+						</a>
+						<button type="button" class="navbar-toggle collapsed orceset-toggle" data-toggle="collapse" data-target="#nav_list">
+				        <span class="sr-only">导航</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</div>
+					<div class="collapse navbar-collapse" id="nav_list">
+						<ul class="nav navbar-nav orceset-navbar">
+							<li class="orceset-navbar-item">
+								<a href="#">首页</a>
+							</li>
+							<li class="orceset-navbar-item dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">公司简介</a>
+									</li>
+									<li>
+										<a href="#">东南大学-力汇振控联合中心简介</a>
+									</li>
+									<li>
+										<a href="#">专家团队简介</a>
+									</li>
+									<li>
+										<a href="#">公司愿景</a>
+									</li>
+								</ul>
+							</li>
+							<li class="orceset-navbar-item">
+								<a href="#">公司新闻</a>
+							</li>
+							<li class="orceset-navbar-item dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">产品与解决方案</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">产品生产</a>
+									</li>
+									<li>
+										<a href="#">解决方案</a>
+									</li>
+								</ul>
+							</li>
+							<li class="orceset-navbar-item">
+								<a href="#">工程案例</a>
+							</li>
+							<li class="orceset-navbar-item">
+								<a href="#">联系我们</a>
+							</li>
+							<li class="orceset-navbar-item">
+								<a href="#">招贤纳士</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid" style="position: relative;">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 orceset-slider" style="height: 550px;background: #c7c7c7;">
+					
+				</div>
+				<div class="col-md-8 col-xs-12 col-md-offset-2 orceset-index-container">
+					<div class="col-md-4 col-xs-12" style="background: yellow;height: 250px;"></div>
+					<div class="col-md-4 col-xs-12" style="background: red;height: 250px;"></div>
+					<div class="col-md-4 col-xs-12" style="background: green;height: 250px;"></div>
+				</div>
+				<div class="col-md-12 col-xs-12 orceset-index-footer">
+					
+				</div>
+			</div>
+		</div>
+		<footer>
 
-    </div>
-    <footer>
-
-    </footer>
-</body>
+		</footer>
+		<script src="lib/jquery-3.1.1.min.js"></script>
+		<script src="lib/bootstrap.min.js"></script>
+	</body>
 
 </html>

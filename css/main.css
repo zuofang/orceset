@@ -46,7 +46,6 @@
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
-	/* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -158,8 +157,79 @@
 .orceset-product-container{
 	padding: 15px;
 }
+/*工程案例*/
+.breadcrumb{
+	background: #fff;
+	border-bottom: 1px solid #c7c7c7;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.breadcrumb a{
+	color: #666;
+}
+.breadcrumb>li+li:before{
+	content: '>';
+	color: #666;
+}
+.orceset-project-container{
+	background: #F5F5F5;
+}
+.orceset-project-bar{
+	padding: 0;
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	margin-bottom: -1px;
+}
+.orceset-project-bar .btn{
+	height: 24px;
+	line-height: 24px;
+	background: #fff;
+	border: solid 1px #c7c7c7;
+	padding: 0 5px;
+	margin-right: 8px;
+	border-radius: 0;
+}
+.orceset-project-list,.orceset-project-bar{
+	border: 1px solid #C7C7C7;
+}
+.orceset-project-title{
+	color: #686868;
+	text-indent: 2em;
+	border-left: solid 3px #2b7ac6;
+}
+
+.orceset-project-item{
+	padding: 10px;
+}
+.orceset-project-item>.media:hover{
+	background: #2b7ac6;
+	color: #fff!important;
+}
+.orceset-project-item>.media{
+	padding: 10px 15px;
+	background: #fff;
+}
+.orceset-project-item .media-body{
+	padding-left: 10px;
+	height: 150px;
+}
+.project-item-pic{
+	width: 45%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*产品与解决方案*/
+.product-bg-bar{
+	height: 80px;
+	background-image: url(../images/product_service/product_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /*电脑端*/
 @media only screen and (min-width:768px ) {
+	/*首页*/
 	 .orceset-nav{
 		min-height: 75px;
 		border: none;
@@ -199,8 +269,9 @@
 		z-index: 100;
 	}
 	.orceset-index-footer{
-		height: 120px;
-		padding-top: 90px;
+		padding-top: 0;
+		height: 100px;
+		line-height: 100px;
 	}
 	.orceset-news-container,.orceset-product-content{
 		padding-left: 10px;
@@ -210,5 +281,22 @@
 	}
 	.orceset-news-content{
 		background-position: 10px 2px;
+	}
+	/*工程案例*/
+	.breadcrumb{
+		padding-left: 125px;
+	}
+	.orceset-project-container{
+		margin: 10px 120px;
+	}
+	.orceset-project-item img{
+		max-width: 200px;
+	}
+	.orceset-project-bar .pull-right{
+		margin-right: 80px;
+	}
+	/*产品与解决方案*/
+	.product-bg-bar{
+		height: 180px;
 	}
 }

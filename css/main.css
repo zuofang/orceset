@@ -1,3 +1,9 @@
+ul,ol{
+	padding-left: 0;
+}
+li{
+	list-style: none;
+}
 /*首页*/
 .orceset-nav{
 	background: #fff;
@@ -159,10 +165,10 @@
 }
 /*工程案例*/
 .breadcrumb{
+	padding: 0;
 	background: #fff;
 	border-bottom: 1px solid #c7c7c7;
 	margin-bottom: 0;
-	font-weight: bold;
 }
 .breadcrumb a{
 	color: #666;
@@ -226,6 +232,78 @@
 	background-image: url(../images/product_service/product_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.proser-container{
+	padding: 0 10px;
+	position: relative;
+}
+.proser-container .breadcrumb{
+	padding: 5px 0;
+}
+.proser-content h3{
+	text-align: center;
+}
+.proser-content p{
+	text-indent: 2em;
+}
+.proser-menu-cotainer{
+	width: 150px;
+	position: absolute;
+	color: #666;
+	left: -150px;
+	top: 40px;
+}
+.proser-menu-btn{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 17px;
+	background: #d4d4d4;
+	right: -30px;
+	top: 0;
+}
+.proser-menu-btn p{
+	margin-bottom: 0;
+}
+.proser-menu-btn .menu-btn-text{
+	display: none;
+}
+.proser-menu-item{
+	background: #d4d4d4;
+	text-align: left;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.proser-menu-item:hover{
+	background: #E8E8E8;
+}
+.proser-menu-item .detail-list{
+	color: #fff;
+	font-size: 13px;
+	background: #000;
+	opacity: .8;
+	margin: 0 -15px;
+	overflow: hidden;
+	height: 0;
+}
+.proser-menu-item,.proser-menu-item .detail-item{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.proser-menu-item .detail-item{
+	height: 30px;
+	line-height: 30px;
+	padding:0 15px;
+	
+}
+.proser-menu-item .detail-item>a{
+	color: #fff;
+}
+.proser-menu-item .detail-item>a:hover{
+	color: #A0E213;
 }
 /*电脑端*/
 @media only screen and (min-width:768px ) {
@@ -298,5 +376,35 @@
 	/*产品与解决方案*/
 	.product-bg-bar{
 		height: 180px;
+	}
+	.proser-container{
+		padding: 0 10% 0 30%;
+	}
+	.proser-container .breadcrumb{
+		padding: 10px 0;
+	}
+	.proser-menu-cotainer{
+		left: 150px;
+		top: -50px;
+		width: 200px;
+	}
+	.proser-menu-btn{
+		left: 0;
+		top: 0;
+		width: 200px;
+		height: auto;
+		padding: 20px;
+		background: #007AFF;
+		color: #fff;
+	}
+	.proser-menu-btn .menu-btn-text{
+		display: block;
+	}
+	.proser-menu-list{
+		margin-top: 100px;
+	}
+	.proser-menu-item{
+		min-height: 60px;
+		line-height: 40px;
 	}
 }

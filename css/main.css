@@ -305,6 +305,9 @@ li{
 .proser-menu-item .detail-item>a:hover{
 	color: #A0E213;
 }
+.orceset-project-bar.bottom-bar{
+	margin-bottom: 10px;
+}
 /*电脑端*/
 @media only screen and (min-width:768px ) {
 	/*首页*/
@@ -406,5 +409,8 @@ li{
 	.proser-menu-item{
 		min-height: 60px;
 		line-height: 40px;
+	}
+	.orceset-project-bar.bottom-bar{
+		display: none;
 	}
 }
